@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Network | Minecraft Server & Community Hub</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="Background octopasity.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">PHANTOM <span>NETWORK</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servers">Game Modes</a></li>
+            <li><a href="#chat">Global Chat</a></li>
+            <li><button class="ip-btn" id="copyIpBtn"><i class="fa-solid fa-copy"></i> phantomclan.minehut.gg </button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Showcase Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="status-badge"><span class="pulse-dot"></span> <span id="playerCount">Calculating</span> Players Online</div>
+            <h1>Step Into The Phantom Realm</h1>
+            <p>Experience ultra-low latency, custom plugins, and a massive community across our diverse game modes.</p>
+            <div class="hero-actions">
+                <a href="#servers" class="btn-primary">Explore Servers</a>
+                <a href="#chat" class="btn-secondary">Join Live Chat</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Minecraft Game Modes / Servers Grid -->
+    <section id="servers" class="section">
+        <h2 class="section-title">Our Minecraft Realms</h2>
+        <div class="grid">
+            <div class="server-card">
+                <div class="card-icon"><i class="fa-solid fa-gavel"></i></div>
+                <h3>Custom Factions</h3>
+                <p>Form alliances, build impenetrable bases, and raid your rivals with dynamic TNT mechanics and custom enchantments.</p>
+                <span class="badge survival">Active</span>
+            </div>
+            <div class="server-card">
+                <div class="card-icon"><i class="fa-solid fa-campground"></i></div>
+                <h3>Phantom Survival</h3>
+                <p>A relaxed, economy-driven survival experience featuring player shops, land claims, and daily community quests.</p>
+                <span class="badge economy">Popular</span>
+            </div>
+            <div class="server-card">
+                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Competitive Skyblock</h3>
+                <p>Start on a single block, build an island empire, automate factories, and compete for the top weekly payouts.</p>
+                <span class="badge skyblock">Hardcore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Community Chat Box Section -->
+    <section id="chat" class="section chat-section">
+        <h2 class="section-title">Global Network Chat</h2>
+        <p class="section-subtitle">Chat in real-time with players across all servers right from your browser.</p>
+        
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-status"><span class="online-indicator"></span> #global-lobby</div>
+                <div class="chat-actions"><i class="fa-solid fa-users"></i> <span id="chatUsersCount">242</span> online</div>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages populated via app.js -->
+            </div>
+            
+            <form class="chat-input-area" id="chatForm">
+                <input type="text" id="usernameInput" placeholder="Your Nickname" required maxlength="16">
+                <input type="text" id="messageInput" placeholder="Type a message into the network..." required autocomplete="off" maxlength="120">
+                <button type="submit" class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Phantom Network. Not affiliated with Mojang Studios.</p>
+    </footer>
+
+    <script src="document.js"></script>
+</body>
+</html>
